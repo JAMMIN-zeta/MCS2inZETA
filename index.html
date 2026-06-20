@@ -133,19 +133,6 @@ gap: 10px;
 transform: none;
 }
 
-.mini-photo span {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 6px;
-  color: #ffffff; /* ← 기존 #d7f6dd 대신 원하는 색상 코드로 변경 (예: 주황/골드 계열 #ffaa00 또는 흰색 #ffffff) */
-  background: linear-gradient(transparent, rgba(8, 13, 15, 0.92) 35%);
-  font-size: 0.78rem;
-  font-weight: 900;
-  text-align: center;
-}
-
 .mini-photo img {
 width: 100%;
 height: 100%;
@@ -155,16 +142,22 @@ filter: saturate(0.88) contrast(1.08);
 }
 
 .mini-photo span {
-position: absolute;
-left: 0;
-right: 0;
-bottom: 0;
-padding: 6px;
-color: #d7f6dd;
-background: linear-gradient(transparent, rgba(8, 13, 15, 0.92) 35%);
-font-size: 0.78rem;
-font-weight: 900;
-text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 6px;
+  color: #d7f6dd;
+  background: linear-gradient(transparent, rgba(8, 13, 15, 0.92) 85%);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-align: center;
+  z-index: 2;
+}
+
+.mini-photo {
+  position: relative;
+  overflow: hidden;
 }
 
 .case-stamp {
